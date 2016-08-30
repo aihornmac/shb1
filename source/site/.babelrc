@@ -1,0 +1,18 @@
+{
+  "presets": [
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "syntax-trailing-function-commas",
+    "transform-es2015-modules-commonjs",
+    "transform-es2015-destructuring",
+    "transform-es2015-block-scoping",
+    ["module-alias", [
+      { "src": "./source/site", "expose": "src" },
+      { "src": "./source/config", "expose": "config" },
+      { "src": "./source/lib", "expose": "lib" },
+    ]]
+  ]
+}
